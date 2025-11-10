@@ -49,11 +49,11 @@ const iUser2: IUserWithRole = {
 type Friends = string[];
 const friends: Friends = ["John", "Jane", "Doe"];
 
+// interface IFriends2 extends Array<string>{}
 interface IFriends {
     [index: number]: string
 }
 const iFriends: IFriends = ["John", "Jane", "Doe"]
-
 
 //* Function
 type Add = (a: number, b: number) => number;
