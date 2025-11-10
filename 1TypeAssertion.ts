@@ -26,5 +26,17 @@ console.log(result1, result2);
 // result1.   //? recommend number methoods
 
 
+type CustomError = {
+    code: number;
+    message: string;
+}
+try {
+    
+} catch (error) {
+    console.log(error.message);        // doesnt recommend any method
+    console.log((error as CustomError).message);
+}
+
+
 
 
