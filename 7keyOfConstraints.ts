@@ -66,7 +66,7 @@ console.log(getProperty3(house,'width'));
 
 const getProperty4 = <T, K extends keyof T>(obj: T, key: K) => {
     return obj[key];
-};
+}; 
 console.log(getProperty4(user, 'name'));     
 console.log(getProperty4(user, 'job'));
 console.log(getProperty4(house, 'width'));       //* usable for any object
